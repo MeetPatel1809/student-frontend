@@ -1,0 +1,10 @@
+.showvotes {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* White font color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow */
+    background-color: #B7DAFD; /* Green background color */
+    padding: 10px; /* Add some padding for better appearance */
+    text-align: center; /* Center align the text */
+  }
