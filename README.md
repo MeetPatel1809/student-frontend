@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Online Voting System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an online voting system developed using Spring for the backend and React for the frontend. The project utilizes PostgreSQL as the database management system.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Online Voting System is designed to facilitate the voting process in various contexts, such as elections, surveys, or decision-making processes within organizations. The system provides a user-friendly interface for both administrators and voters, ensuring secure and efficient voting procedures.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- User Authentication: Secure login and registration for voters and administrators.
+- Voting Management: Creation, editing, and deletion of voting events by administrators.
+- Candidate Management: Addition, removal, and editing of candidates for each voting event.
+- Real-time Updates: Immediate display of voting results as votes are cast.
+- Secure Voting: Encryption and authentication mechanisms to ensure the integrity and confidentiality of votes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Java Development Kit (JDK) 11 or higher
+- Node.js and npm
+- PostgreSQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+git clone https://github.com/your-username/online-voting-system.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the backend directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+cd online-voting-system/backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+3. Build and run the Spring Boot application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+./mvnw spring-boot:run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate to the frontend directory:
 
-### Analyzing the Bundle Size
+cd ../frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm install
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Start the development server:
 
-### Deployment
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Access the application through your web browser.
+2. Register an account if you're a new user, or log in if you already have an account.
+3. As an administrator, create a new voting event and add candidates.
+4. Share the voting link with voters.
+5. Voters log in and cast their votes.
+6. Administrators can monitor voting progress and view results in real-time.
+
+## Technologies Used
+
+- **Backend**: Spring Framework (Spring Boot, Spring Security)
+- **Frontend**: React, React Router, Axios
+- **Database**: PostgreSQL
+- **Other Tools**: Maven, npm
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues for any bugs, feature requests, or improvements.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
