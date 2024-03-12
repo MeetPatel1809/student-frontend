@@ -10,7 +10,7 @@ function AddVoter({ onAdd }) {
     const [birthDate, setBirthDate] = useState('');
 
     const handleAddVoter = () => {
-        const id = uuidv4(); // Generate random UUID
+        const id = uuidv4(); // Generate random UUid
         onAdd({ id, name, city, state, contact, birthDate });
         setName('');
         setCity('');

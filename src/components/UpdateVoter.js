@@ -15,7 +15,7 @@ function UpdateVoter({ onUpdate }) {
         setName('');
         setCity('');
         setState('');
-        setContact('');
+        setContact(''); 
         setBirthDate('');
     };
 
